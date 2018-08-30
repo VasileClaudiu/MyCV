@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My CV</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.3.3.7.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/mdb.min.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+<style type="text/css">
+.mouse
+{
+height: 21px;
+width: 14px;
+  border-radius: 10px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel
+{
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+}
+
+.wheel
+{
+  -webkit-animation: mouse-wheel 1.2s ease infinite;
+  -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  50% { top: 2px; }
+  100% { top: 3px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+</style>
+</head>
+<body class="bg-dark">
+		<!-- Preloader-->
+        <div class="loader-container">
+			<div class="loader">
+				<div id="mask">
+                    <svg class="preloader-icon" width="34" height="38" viewbox="0 0 34 38">
+                      <path class="preloader-path" stroke-dashoffset="0" d="M29.437 8.114L19.35 2.132c-1.473-.86-3.207-.86-4.68 0L4.153 8.114C2.68 8.974 1.5 10.56 1.5 12.28v11.964c0 1.718 1.22 3.306 2.69 4.165l10.404 5.98c1.47.86 3.362.86 4.834 0l9.97-5.98c1.472-.86 2.102-2.45 2.102-4.168V12.28c0-1.72-.59-3.306-2.063-4.166z"></path>
+                    </svg>
+              </div>
+			</div>
+		</div>
+        <!-- End Preloader-->
+        <!--========== start nav area============-->
+        <nav id="header" class="navbar sc-navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header header-logo">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right header-social">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/claudiu-vasile-0a17aa91/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/VasileClaudiu"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://plus.google.com/u/0/111556991999469089084"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--========== End start nav area============-->	
+        <div class="col-main">
+            <div class="col-avatar">
+                <div class="prot-image img-fill-container">
+                    <img class="avatar" src="images/eucv.jpg" alt="Avatar" width="100%">
+                </div>
+            </div>
+            <!--
+            <div id="fp-nav" class="right" style="margin-top: -174px;">
+            	<ul>
+            		<li>
+            			<a class="active" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            		<li>
+            			<a class="" href="#"></a>
+            		</li>
+            	</ul>
+            </div>-->
+            <div class="wrapper dk-bg" id="fullpage">
+                <div class="sc-wel-section op-section">
+                    <div class="frame">
+                        <div class="wel-content">
+                            <h3 class="hello-t">Hello, I am</h3>
+                            <h1 class="name-t">Claudiu <br/><span>Vasile</span></h1>
+                            <h2 class="expart-n">Senior Web Developer</h2>
+                            <div class="header-contact-infos col-md-12">
+                            	<div class="row">
+                                <div class="header-contact-info col-md-3"><i class="fa fa-map-marker" aria-hidden="true"></i>Romania, Bucharest</div>
+                                <a href="http://www.newuniverses.com" class="header-contact-info col-md-3" style="overflow: hidden;white-space: nowrap;padding-left: 0;"><i class="fa fa-globe" aria-hidden="true"></i>www.newuniverses.com</a>
+                                <a href="mailto:claudiu.vasile@gmail.com" class="header-contact-info col-md-3" style="overflow: hidden;white-space: nowrap;padding-left: 0;"><i class="fa fa-envelope-o" aria-hidden="true"></i>claudiu.vasile@gmail.com</a>
+                                <div class="header-contact-info col-md-3"><i class="fa fa-phone" aria-hidden="true"></i>(+4)0771056830</div>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="sc-about op-section">
+                    <div class="frame">
+                        <div class="sec-title2">
+                            <h2>About</h2>
+                            <h6>A little about me</h6>
+                        </div>
+                        <div class="about-content">
+                            <p>I'm Senior Web Developer.
+                            Over 16 solid years in IT support on different OS systems and different IT application, implementation two core banking(Branch Power and Flexcube) and two great applications SAP and Siveco Applications . I'm a team player and sociable person , good communication skill. My objectives are the optimization of the work in my group with more personal involvement in various projects and a personal growth of my skills on UNIX and Windows.</p><p>Now, after two year on web developer experience I can make any web full(from start to end) modern application in HTML,PHP,jQuery, ajax API and Javascript on any database server Oracle or MySQL, also developer of Microsoft Excel VBA and APEX Oracle. I have experience work with git and framework like bootstrap, codeigniter, yii, symphony, zend, laravel . I would like to continue with PHP in a big company.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="op-section sc-skills">
+                    <div class="frame">
+                        <div class="sec-title2">
+                            <h2>SKILLS</h2>
+                            <h6>What I love to do</h6>
+                        </div>
+                        <div class="skill-content">
+                            <p>I like work as web developer, I like work with PHP framework like Symfony, Laravel, Codeigniter and CMS like Magento, Wordpress.</p><p>I like Javascript framework like React, Angular.</p><p>I have more experience with API and some experience with JAVA, Android and C#</p>
+                            <div id="bt-ourskill" class="row progress-element">
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">PHP</h4><div class="skill-val"><span class="counter">90</span>%</div></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="90%"><div class="bt-skillbar"></div></div>                            
+                                    </div> 
+                                </div>
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">Adobe Photoshop</h4><div class="skill-val"><span class="counter">70</span>%</div></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="70%"><div class="bt-skillbar"></div></div>                            
+                                    </div> 
+                                </div>
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">Symfony</h4><div class="skill-val"><span class="counter">80</span>%</div></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="80%"><div class="bt-skillbar"></div></div>                            
+                                    </div>  
+                                </div>
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">Laravel</h4><div class="skill-val"><span class="counter">80</span>%</div></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="80%"><div class="bt-skillbar"></div></div>                            
+                                    </div>  
+                                </div>
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">CodeIgniter</h4><div class="skill-val"><span class="counter">100</span>%</div></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="100%"><div class="bt-skillbar"></div></div>                            
+                                    </div>  
+                                </div>
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">Angular</h4><div class="skill-val"><span class="counter">80</span>%</div></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="80%"><div class="bt-skillbar"></div></div>                            
+                                    </div>  
+                                </div>
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">React</h4><div class="skill-val"><span class="counter">70</span>%</div></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="70%"><div class="bt-skillbar"></div></div>                            
+                                    </div>  
+                                </div>
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">Bootstrap</h4><div class="skill-val"><span class="counter">100</span>%</div></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="100%"><div class="bt-skillbar"></div></div>                            
+                                    </div> 
+                                </div>
+                                <div class="col-xs-6 bt-skill-item">
+                                    <div class="skill-info"><h4 class="skill-name">HTML5, CSS3</h4><span class="skill-val">100%</span></div>
+                                    <div class="bt-skill">
+                                        <div class="bt-skillholder" data-percent="100%"><div class="bt-skillbar"></div></div>                            
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="op-section sc-expertise">
+                    <div class="frame">
+                        <div class="sec-title2">
+                            <h2>Expertise</h2>
+                            <h6>What I can bring to table</h6>
+                        </div>
+                        <div class="row expertise">
+                            <div class="col-xs-6 media expertise-media">
+                                <div class="media-left">
+                                    <span class="fa fa-pencil"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="title">Web Development</h4>
+                                    <p>I'm good web developer.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 media expertise-media">
+                                <div class="media-left">
+                                    <span class="fa fa-bullseye"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="title">Website Design</h4>
+                                    <p>I can apply the design on website, but I don't have a creation skill.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 media expertise-media">
+                                <div class="media-left">
+                                    <span class="fa fa-cog fa-fw"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="title">WP Theme Development</h4>
+                                    <p>I have been create a Wordpress Theme.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 media expertise-media">
+                                <div class="media-left">
+                                    <span class="fa fa-lock"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="title">Mobile App Design</h4>
+                                    <p>I already did a some Android application.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="op-section sc-experience">
+                    <div class="frame">
+                        <div class="sec-title2">
+                            <h2>Experiences</h2>
+                            <h6>What I love to do</h6>
+                        </div>
+                        <div class="row row-experience">
+                            <div class="col-xs-3 col-full">
+                                <h5 class="experience-date">December 2014<br/>to Present</h5>
+                            </div>
+                            <div class="col-xs-9 ex-content">
+                                <h4 class="title">Web Developer and Database Administration at OPCOM S.A.</h4>
+                                <h5>Bucharest</h5>
+                                <p><u>
+                                	<li>System Administrator Oracle Databases</li>
+                                	<li>Website Administrator www.opcom.ro</li>
+                                	<li>PHP,HTML,Javascript developer on Oracle database, I make Web application for Opcom Company and administration website www.opcom.ro</li>
+                                	<li>Oracle Database 11g: Administration Workshop I Ed 2 –training</li>
+                                	<li>Developer of Microsoft Excel VBA Applications</li>
+                                </u></p>
+                            </div>
+                        </div>
+                        <div class="row row-experience">
+                            <div class="col-xs-3 col-full">
+                                <h5 class="experience-date">May 2014<br/>to December 2014</h5>
+                            </div>
+                            <div class="col-xs-9 ex-content">
+                                <h4 class="title">System Engineer-Exchange Administrator at Atos IT Solutions and Services A/S</h4>
+                                <h5>Bucharest</h5>
+                                <p>System Administrator Exchange 2010:
+                                <ul><li>Exchange Administrator 2010- windows 2008 server, AD, windows 2012 server.</li>
+                                	<li>Migration users and mailbox Exchange 2003 to Exchange 2010 for all clients of Atos Company;</li>
+                                	<li>backup databases exchange 2010;- Check daily all Environment of exchange 2010 from Atos Company.</li>
+                                	<li>All help desk for exchange 2010 issue for all clients of Atos Company, resolve all ticket for this issue from SAP interface.</li></ul></p>
+                            </div>
+                        </div>
+                        <div class="row row-experience">
+                            <div class="col-xs-3 col-full">
+                                <h5 class="experience-date">May 2007<br/>to November 2013</h5>
+                            </div>
+                            <div class="col-xs-9 ex-content">
+                                <h4 class="title">System Engineer at Banca Transilvania</h4>
+                                <h5>Slatina,Olt</h5>
+                                <p>IT Areas-IT computer network maintenance, 100 workstations, 7 servers, application development, Visual C #, VBA, fox pro, Visual Fox Pro, Visual Basic, VB Script,ASP Microsoft. Net.,Office Aplication(Word, Excel,Powerpoint, Outlook), Microsoft SQL Server 2005,Windows server 2000-2012, Active Directory, Exchange 2010,2013, PHP,Drupal,Wordpress.
+                                <ul><li>Configure Backup & restore for Windows, Unix, Linux systems using HP Data Protector;</li>
+                                <li>Microsoft Windows Server Files Sharing Services security and organization;</li>
+                                <li>Files Sharing Server;- Microsoft Windows Server Update Services - WSUS Server;</li>
+                                <li>Microsoft Windows Server SMS Console Services - SMS Server;</li>
+                            	<li>Microsoft Windows Server SCOM monitoring alerts;</li>
+                            	<li>Microsoft Windows Server 2003,2008 Active Directory Management and monitoring, managing users and computers;</li>
+                            	<li>2nd and 3rd level support for clients/of Transilvania Bank employees in IT matters;</li>
+                            	<li>help desk support for over 80 of Transilvania Bank employees;</li>
+                            	<li>Server FTP upload/download;</li>
+                            	<li>branch core banking Branch Power configuration and maintenance-settings reports;</li>
+                            	<li>branch core banking Flex Cube implementing, configuration and maintenance-settings reports;</li>
+                            	<li>hardware maintenance servers, switch , routers, computers, telecommunication.</li></ul></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="op-section sc-awards">
+                    <div class="frame">
+                        <div class="sec-title2">
+                            <h2>Awards</h2>
+                            <h6>Achievements of a lifetime</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 award-item">
+                                <img src="images/award.png" alt="Award">
+                                <h4 class="title">Site of the Day</h4>
+                                <h5>www.newuniverses.com</h5>
+                                <p>Laravel-Vue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="op-section sc-portfolio">
+                    <div class="frame">
+                        <div class="sec-title2">
+                            <h2>Portfolio</h2>
+                            <h6>My amazing works</h6>
+                        </div>
+                        <ul class="row m0 portfolio-filter" id="filter">
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".wordp">Wordpress</li>
+                            <li data-filter=".mag">Magento</li>
+                            <li data-filter=".codeig">Codeigniter framework</li>
+                            <li data-filter=".laravel">Laravel framework</li>
+                            <li data-filter=".ang">Angular framework</li>
+                            <li data-filter=".sym">Symfony framework</li>
+                            <li data-filter=".zend">Zend framework</li>
+                            <li data-filter=".app">Others</li>
+                            <li data-filter=".mobile">Android</li>
+                        </ul>
+                        <div id="portfolio-grid" class="row portfolio-grid">
+                            <div class="col-sm-6 col-xs-6 portfolio-item wordp">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/atelieruldetuns.jpg" class="fancybox" data-fancybox="atelieruldetuns" title="Wordpress" data-desc="Logo, business card and other branding design" class="popup">
+                                        <img src="images/portofolio/atelieruldetuns.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Atelierul de tuns</h5>
+                                            <p><a href="http://www.atelieruldetuns.ro">www.atelieruldetuns.ro</a></p>
+                                            <p>backend in laravel - sys.atelieruldetuns.ro</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item wordp">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/universe-wordpress.jpg" class="fancybox" data-fancybox="wordpress" title="Wordpress" data-desc="Wordpress and other branding design" class="popup">
+                                        <img src="images/portofolio/universe-wordpress.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Wordpress Custom Theme developer</h5>
+                                            <p><a href="http://www.newuniverses.com/wordpress">www.newuniverses.com/wordpress</a></p>
+                                            <p>Wordpress Custom Theme developer- wordpress multisite</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item mag">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/universe-magento.jpg" class="fancybox" data-fancybox="magento" title="Magento" data-desc="Magento design" class="popup">
+                                        <img src="images/portofolio/universe-magento.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Magento</h5>
+                                            <p><a href="http://www.sitefirma.ro">www.sitefirma.ro</a></p>
+                                            <p>Magento Custom Theme developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item mag">
+                                    <div class="portfolio-image"> 
+                                    	<a href="images/portofolio/universe-magento.jpg" class="fancybox" data-fancybox="magento" title="Magento" data-desc="Magento design" class="popup">
+                                        <img src="images/portofolio/universe-magento.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Magento</h5>
+                                            <p><a href="http://www.newuniverses.com/magento">www.newuniverses.com/magento</a></p>
+                                            <p>Magento Custom Theme developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item codeig">     
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/bettyjobs.jpg" class="fancybox" data-fancybox="codeigniter" title="Codeigniter" data-desc="Codeigniter design" class="popup">
+                                        <img src="images/portofolio/bettyjobs.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Codeigniter</h5>
+                                            <p><a href="http://www.betyjobs.ro/ro/welcome">www.betyjobs.ro</a></p>
+                                            <p>Codeigniter framework developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item codeig">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/decebal.jpg" class="fancybox" data-fancybox="codeigniter" title="Codeigniter" data-desc="Codeigniter design" class="popup">
+                                        <img src="images/portofolio/decebal.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Codeigniter</h5>
+                                            <p><a href="http://www.newuniverses.com/decebal">www.newuniverses.com/decebal</a></p>
+                                            <p>CodeIgniter Bootstrap 4,Rest API Jwt , AdminLTE developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item laravel">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/atelieruldetuns-sys.jpg" class="fancybox" data-fancybox="laravel" title="Laravel" data-desc="Laravel design" class="popup">
+                                        <img src="images/portofolio/atelieruldetuns-sys.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Laravel</h5>
+                                            <p><a href="http://sys.atelieruldetuns.ro/login">sys.atelieruldetuns.ro</a></p>
+                                            <p>Laravel framework developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item laravel">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/newuniverses.jpg" class="fancybox" data-fancybox="laravel" title="Laravel" data-desc="Laravel design" class="popup">
+                                        <img src="images/portofolio/newuniverses.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Laravel</h5>
+                                            <p><a href="http://www.newuniverses.com">www.newuniverses.com</a></p>
+                                            <p>Laravel-Vue developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item laravel">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/app.obcauction.com.jpg" class="fancybox" data-fancybox="laravel" title="Laravel" data-desc="Laravel design" class="popup">
+                                        <img src="images/portofolio/app.obcauction.com.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Laravel</h5>
+                                            <p><a href="http://app.obcauction.com">app.obcauction.com</a></p>
+                                            <p>Laravel- integration Paypal Api, Ninja Invoice developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item ang">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/bitcoin.jpg" class="fancybox" data-fancybox="angular" title="Angular" data-desc="Angular design" class="popup">
+                                        <img src="images/portofolio/bitcoin.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Laravel Nodejs</h5>
+                                            <p><a href="http://188.226.174.88/dist">188.226.174.88/dist</a></p>
+                                            <p>Rest API angular laravel node js Bicoin Bitcoin Core bitcoine-core</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item sym">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/newuniverses-sym.jpg" class="fancybox" data-fancybox="symfony" title="Symfony" data-desc="Symfony design" class="popup">
+                                        <img src="images/portofolio/newuniverses-sym.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Symfony</h5>
+                                            <p><a href="http://www.newuniverses.com/sym">www.newuniverses.com/sym</a></p>
+                                            <p>Symfony4 -Rest API Jwt developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item ang">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/newuniverses-ang-ionic.jpg" class="fancybox" data-fancybox="angular" title="Angular" data-desc="Angular design" class="popup">
+                                        <img src="images/portofolio/newuniverses-ang-ionic.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Angular firebase chat</h5>
+                                            <p><a href="http://www.newuniverses.com/angfirebasechat/www">www.newuniverses.com/angfirebasechat/www</a></p>
+                                            <p>Laravel-Vue developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item app">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/medasig.jpg" class="fancybox" data-fancybox="custom" title="Custom framework" data-desc="Custom framework design" class="popup">
+                                        <img src="images/portofolio/medasig.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Custom framework PHP</h5>
+                                            <p><a href="http://www.medasig.md">www.medasig.md</a></p>
+                                            <p>Custom framework PHP developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 portfolio-item app">
+                                    <div class="portfolio-image">
+                                    	<a href="images/portofolio/rca.jpg" class="fancybox" data-fancybox="custom" title="Custom framework" data-desc="Custom framework design" class="popup">
+                                        <img src="images/portofolio/rca.jpg" alt="portfolio">
+                                        <div class="texts">
+                                            <h5>Custom framework PHP</h5>
+                                            <p><a href="http://www.rca.md">www.rca.md</a></p>
+                                            <p>Custom framework PHP developer</p>
+                                        </div>
+                                    	</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="op-section sc-contact">
+                    <div class="frame">
+                        <div class="sec-title2">
+                            <h2>Contact</h2>
+                            <h6>Say Hello</h6>
+                        </div>
+                        <div class="header-contact-info col-md-12">
+                            <div class="row">
+                            <a class="header-contact-info col-md-3"><i class="fa fa-map-marker" aria-hidden="true"></i>Romania, Bucharest</a>
+                            <a href="http://www.newuniverses.com" class="header-contact-info col-md-3" style="overflow: hidden;white-space: nowrap;padding-left: 0;"><i class="fa fa-globe" aria-hidden="true"></i>www.newuniverses.com</a>
+                            <a href="mailto:claudiu.vasile@gmail.com" class="header-contact-info col-md-3" style="overflow: hidden;white-space: nowrap;padding-left: 0;"><i class="fa fa-envelope-o" aria-hidden="true"></i>claudiu.vasile@gmail.com</a>
+                            <a class="header-contact-info col-md-3"><i class="fa fa-phone" aria-hidden="true"></i>+40-771-056-830</a>
+                            </div>
+                        </div>
+                        <form id="contact-form" class="contact-form" action="contact/contact.php" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form-name">Name</label>
+                                        <input id="form-name" name="contactName" type="text" class="form-control contact-name" placeholder="Type your name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form-email">Email</label>
+                                        <input id="form-email" name="contactMail" type="email" class="form-control contact-mail" placeholder="Type your email address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">How may I help you?</label>
+                                <textarea id="form-message" name="contactMessage" class="form-control contact-message" placeholder="Type message"></textarea>
+                            </div>
+                            <button type="submit">Send message</button>
+                            <span class="contact-submit-progress"></span>
+                            <p class="contact-submit-message"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+</body>
+<footer>
+	<script src="js/jquery-2.2.4.js"></script>
+	<script src="js/bootstrap.3.3.7.min.js"></script>
+	<script src="js/mdb.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/isotope-min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery-imagefill.js"></script>
+	<script src="js/jquery.stellar.js"></script>
+	<script src="js/scrolloverflow.min.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
+	<script src="js/apear.js"></script>
+	<script src="js/jquery-nav.js"></script>
+	<script src="js/nicescroll.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+</footer>
+</html>
+
