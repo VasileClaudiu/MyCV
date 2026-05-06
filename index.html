@@ -1038,7 +1038,7 @@
               </div>
               <div class="my-3">
                 <div class="loading" id="loading">Loading</div>
-                <div class="error-message" id="message"></div>
+                <div class="error-message" id="messageEmail"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit" id="sendBtn">Send Message</button></div>
@@ -1221,7 +1221,7 @@
             }
             
             function showMessage(text, type) {
-                const $message = $('#message');
+                const $message = $('#messageEmail');
                 $message.removeClass('success error');
                 $message.addClass(type);
                 $message.text(text);
@@ -1229,7 +1229,7 @@
             }
             
             function hideMessage() {
-                $('#message').hide();
+                $('#messageEmail').hide();
             }
         });
     </script>
