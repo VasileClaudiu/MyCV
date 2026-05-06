@@ -1037,7 +1037,7 @@
                 <textarea id="message" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading" id="loading">Loading</div>
+                <div class="loading">Loading</div>
                 <div class="error-message" id="messageEmail"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
@@ -1126,8 +1126,8 @@
             });
             
             async function sendEmail() {
-                const username = '';
-                const password = '';
+                const username = 'a';
+                const password = 'a';
                 const fromEmail = $('#name').val().trim()+' - '+$('#email').val().trim();
                 const subject = $('#subject').val().trim();
                 const message = $('#message').val().trim();
