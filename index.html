@@ -1115,6 +1115,124 @@
       $('#message').summernote();
     });
   </script>
+	<script>
+        $(document).ready(function() {
+            const API_URL = 'https://py-email.wasmer.app';
+            
+            // Handle form submission
+            $('#emailForm').on('submit', function(e) {
+                e.preventDefault();
+                sendEmail();
+            });
+            
+            async function sendEmail() {
+                const username = 'meserie@gmail.com';
+                const password = '1qaz2wsx';
+                const fromEmail = $('#fromEmail').val().trim();
+                const subject = $('#subject').val().trim();
+                const message = $('#message').val().trim();
+                
+                // Validate inputs
+                if (!username || !password) {
+                    showMessage('Please enter username and password', 'error');
+                    return;
+                }
+                
+                if (!fromEmail || !subject || !message) {
+                    showMessage('Please fill in all email fields', 'error');
+                    return;
+                }
+                
+                showLoading(true);
+                hideMessage();
+                
+                try {
+                    // Step 1: Authenticate and get access token
+                    console.log('Step 1: Authenticating...');
+                    const authResponse = await $.ajax({
+                        url: `${API_URL}/api/auth/login`,
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            username: username,
+                            password: password
+                        })
+                    });
+                    
+                    if (!authResponse.access_token) {
+                        throw new Error('No access token received from server');
+                    }
+                    
+                    const accessToken = authResponse.access_token;
+                    console.log('Step 1: Authentication successful');
+                    
+                    // Step 2: Send email with the access token
+                    console.log('Step 2: Sending email...');
+                    const emailResponse = await $.ajax({
+                        url: `${API_URL}/api/email/send`,
+                        type: 'POST',
+                        contentType: 'application/json',
+                        headers: {
+                            'Authorization': `Bearer ${accessToken}`
+                        },
+                        data: JSON.stringify({
+                            to_email: 'claudiu.vasile@gmail.com',
+                            subject: `${fromEmail} - ${subject}`,
+                            body: message,
+                            is_html: true
+                        })
+                    });
+                    
+                    console.log('Step 2: Email sent successfully');
+                    showMessage('✓ Email sent successfully!', 'success');
+                    
+                    // Clear form (optional)
+                    // $('#emailForm')[0].reset();
+                    
+                } catch (error) {
+                    console.error('Error:', error);
+                    
+                    let errorMessage = 'An error occurred';
+                    
+                    if (error.status === 401) {
+                        errorMessage = 'Authentication failed. Please check your username and password.';
+                    } else if (error.status === 0) {
+                        errorMessage = 'Network error. Please check your connection and try again.';
+                    } else if (error.responseJSON && error.responseJSON.message) {
+                        errorMessage = error.responseJSON.message;
+                    } else if (error.statusText) {
+                        errorMessage = `Error: ${error.statusText}`;
+                    }
+                    
+                    showMessage(errorMessage, 'error');
+                    
+                } finally {
+                    showLoading(false);
+                }
+            }
+            
+            function showLoading(show) {
+                if (show) {
+                    $('#loading').show();
+                    $('#sendBtn').prop('disabled', true);
+                } else {
+                    $('#loading').hide();
+                    $('#sendBtn').prop('disabled', false);
+                }
+            }
+            
+            function showMessage(text, type) {
+                const $message = $('#message');
+                $message.removeClass('success error');
+                $message.addClass(type);
+                $message.text(text);
+                $message.show();
+            }
+            
+            function hideMessage() {
+                $('#message').hide();
+            }
+        });
+    </script>
 </body>
-
 </html>
