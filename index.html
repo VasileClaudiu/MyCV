@@ -1126,8 +1126,8 @@
             });
             
             async function sendEmail() {
-                const username = 'wasmer@gmail.com';
-                const password = 'email#123';
+                const username = '';
+                const password = '';
                 const fromEmail = $('#name').val().trim()+' - '+$('#email').val().trim();
                 const subject = $('#subject').val().trim();
                 const message = $('#message').val().trim();
@@ -1154,8 +1154,7 @@
                         type: 'POST',
                         contentType: 'application/json',
                         data: JSON.stringify({
-                            email: username,
-                            password: password
+                            email_encrypted : "2ad014c524cd04db89eea1e719d2b8a81161b5c5ed860322c3900c46ca2afcd4"
                         })
                     });
                     
